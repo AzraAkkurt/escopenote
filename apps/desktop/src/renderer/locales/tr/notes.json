@@ -1,0 +1,209 @@
+{
+  "sidebarAria": "Not kenar çubuğu",
+  "sidebarTitle": "Tüm notlar",
+  "newNote": "Yeni not",
+  "standaloneNotes": "Bağımsız",
+  "noStandalone": "Bağımsız not yok",
+  "noCourseNotes": "Bu derste not yok",
+  "tabsAria": "Açık notlar",
+  "closeTab": "{{title}} kapat",
+  "untitled": "Başlıksız",
+  "selectNote": "Bir not seçin veya yeni oluşturun",
+  "editorPlaceholder": "Yazmaya başlayın… / ile komut menüsü",
+  "titleLabel": "Not başlığı",
+  "loadError": "Not yüklenemedi",
+  "createError": "Not oluşturulamadı",
+  "saveError": "Not kaydedilemedi",
+  "deleteNote": "Notu sil",
+  "deleteNoteAria": "{{title}} sil",
+  "deleteConfirm": "Bu not kalıcı olarak silinsin mi? Kütüphane indeksinden de kaldırılır.",
+  "deleteSuccess": "Not silindi",
+  "deleteError": "Not silinemedi",
+  "toolbarAria": "Biçimlendirme araç çubuğu",
+  "toolbar": {
+    "bold": "Kalın",
+    "italic": "İtalik",
+    "strike": "Üstü çizili",
+    "underline": "Altı çizili",
+    "highlight": "Vurgula",
+    "code": "Satır içi kod",
+    "h1": "Başlık 1",
+    "h2": "Başlık 2",
+    "h3": "Başlık 3",
+    "bulletList": "Madde işaretli liste",
+    "orderedList": "Numaralı liste",
+    "taskList": "Yapılacaklar listesi",
+    "blockquote": "Alıntı",
+    "codeBlock": "Kod bloğu",
+    "alignLeft": "Sola yasla",
+    "alignCenter": "Ortala",
+    "alignRight": "Sağa yasla",
+    "table": "Tablo ekle",
+    "divider": "Ayırıcı çizgi",
+    "mathInline": "Satır içi formül",
+    "wikilink": "Not veya kaynak bağla",
+    "askAgent": "Ajanta sor",
+    "mermaid": "Mermaid diyagramı",
+    "link": "Bağlantı",
+    "linkPrompt": "Bağlantı URL'si"
+  },
+  "linkPicker": {
+    "title": "Bağlantı ekle",
+    "searchPlaceholder": "Not veya kaynak ara…",
+    "browseAll": "Tümünü ara…",
+    "tabs": {
+      "all": "Tümü",
+      "notes": "Notlar",
+      "resources": "Kaynaklar"
+    },
+    "courseHint": "Bu derse bağlı öğeler önce gösterilir; tümünü de seçebilirsiniz.",
+    "empty": "Sonuç bulunamadı",
+    "cancel": "İptal"
+  },
+  "askAgent": {
+    "title": "Ajanta sor",
+    "intro": "Not alırken aklınıza takılanları sorun. Yanıtı kopyalayabilir veya doğrudan nota ekleyebilirsiniz.",
+    "placeholder": "Sorunuzu yazın… (Enter gönder, Shift+Enter satır)",
+    "send": "Gönder",
+    "stop": "Durdur",
+    "close": "Kapat",
+    "emptyChat": "Henüz mesaj yok. İlk sorunuzu yazın.",
+    "includeNote": "Mevcut notu bağlama ekle",
+    "preferWeb": "İnternet araştırmasına izin ver",
+    "optionsAria": "Sohbet seçenekleri",
+    "contextPreview": "Not önizlemesi: {{title}}",
+    "emptyNote": "(boş not)",
+    "copy": "Kopyala",
+    "insertIntoNote": "Nota ekle",
+    "copied": "Panoya kopyalandı",
+    "copyFailed": "Kopyalanamadı",
+    "inserted": "Yanıt nota eklendi",
+    "gatewayOffline": "AI ağ geçidi çevrimdışı. Ayarlardan bağlantıyı kontrol edin.",
+    "you": "Siz",
+    "agent": "Ajent",
+    "thinkingTitle": "Düşünme",
+    "researchTitle": "{{count}} web araması",
+    "messagePreamble": "[Escopenote not editörü — geçici soru]",
+    "messageWebHint": "İnternet araştırması yapılabilir; yerel kaynaklar yetersizse web kaynaklarına başvur.",
+    "messageNoteTitle": "Not başlığı",
+    "messageNoteBody": "Not içeriği",
+    "messageQuestion": "Soru"
+  },
+  "backlinks": {
+    "aria": "Geri bağlantılar",
+    "title": "Bu nota bağlananlar",
+    "loading": "Yükleniyor…",
+    "empty": "Henüz başka not bu nota bağlanmıyor"
+  },
+  "slash": {
+    "groups": {
+      "basic": "Temel",
+      "inline": "Satır içi",
+      "lists": "Listeler",
+      "blocks": "Bloklar",
+      "advanced": "Gelişmiş"
+    },
+    "text": {
+      "title": "Metin",
+      "description": "Normal paragraf"
+    },
+    "h1": {
+      "title": "Başlık 1",
+      "description": "Büyük bölüm başlığı"
+    },
+    "h2": {
+      "title": "Başlık 2",
+      "description": "Orta bölüm başlığı"
+    },
+    "h3": {
+      "title": "Başlık 3",
+      "description": "Küçük bölüm başlığı"
+    },
+    "bold": {
+      "title": "Kalın",
+      "description": "Metni kalın yap"
+    },
+    "italic": {
+      "title": "İtalik",
+      "description": "Metni italik yap"
+    },
+    "strike": {
+      "title": "Üstü çizili",
+      "description": "Metnin üstünü çiz"
+    },
+    "underline": {
+      "title": "Altı çizili",
+      "description": "Metnin altını çiz"
+    },
+    "highlight": {
+      "title": "Vurgula",
+      "description": "Metni vurgula"
+    },
+    "inlineCode": {
+      "title": "Kod",
+      "description": "Satır içi kod"
+    },
+    "bulletList": {
+      "title": "Madde işaretli",
+      "description": "Sırasız liste"
+    },
+    "orderedList": {
+      "title": "Numaralı",
+      "description": "Sıralı liste"
+    },
+    "taskList": {
+      "title": "Görev listesi",
+      "description": "Onay kutulu yapılacaklar"
+    },
+    "blockquote": {
+      "title": "Alıntı",
+      "description": "Alıntı bloğu"
+    },
+    "codeBlock": {
+      "title": "Kod bloğu",
+      "description": "Çok satırlı kod"
+    },
+    "table": {
+      "title": "Tablo",
+      "description": "Boyut seçerek tablo ekle (varsayılan 3×3)"
+    },
+    "divider": {
+      "title": "Ayırıcı",
+      "description": "Yatay çizgi"
+    },
+    "mathInline": {
+      "title": "Formül (satır içi)",
+      "description": "LaTeX: $E=mc^2$"
+    },
+    "mathBlock": {
+      "title": "Formül (blok)",
+      "description": "LaTeX blok denklemi"
+    },
+    "mermaid": {
+      "title": "Akış şeması",
+      "description": "Mermaid diyagramı (düzenlemek için tıklayın)"
+    },
+    "askAgent": {
+      "title": "Ajanta sor",
+      "description": "Not bağlamında geçici AI sohbeti"
+    },
+    "wikilink": {
+      "title": "Not / kaynak bağlantısı",
+      "description": "Listeden not veya ders kaynağı seç"
+    },
+    "link": {
+      "title": "Bağlantı",
+      "description": "Harici URL bağlantısı"
+    }
+  },
+  "tableModal": {
+    "title": "Tablo ekle",
+    "hint": "Varsayılan 3×3; satır ve sütun sayısını değiştirebilirsiniz.",
+    "rows": "Satır",
+    "cols": "Sütun",
+    "headerRow": "Üst satır başlık olsun",
+    "previewAria": "Tablo önizlemesi",
+    "cancel": "İptal",
+    "insert": "Ekle"
+  }
+}

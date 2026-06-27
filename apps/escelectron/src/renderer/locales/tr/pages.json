@@ -1,0 +1,34 @@
+{
+  "overview": {
+    "title": "Genel bakış",
+    "description": "Dersleriniz, notlarınız ve hızlı işlemler.",
+    "addCourse": "Ders ekle",
+    "newNote": "Yeni not",
+    "openChat": "Sohbeti aç",
+    "loading": "Yükleniyor…",
+    "emptyTitle": "Başlayın",
+    "emptyDescription": "Bir ders oluşturun veya ilk notunuzu yazın.",
+    "recentCourses": "Son dersler",
+    "recentNotes": "Son notlar",
+    "noCourses": "Henüz ders yok",
+    "noNotes": "Henüz not yok",
+    "resourceCount": "{{count}} kaynak"
+  },
+  "library": {
+    "title": "Kütüphane",
+    "description": "RAG için dosya, bağlantı ve notlarla dersler.",
+    "emptyTitle": "İlk dersinizi oluşturun",
+    "emptyDescription": "Çalışma materyallerini derse göre düzenleyin.",
+    "notFound": "Ders bulunamadı"
+  },
+  "notes": {
+    "title": "Notlar",
+    "description": "Derslerinize bağlı notlar yazın ve bağlayın."
+  },
+  "chat": {
+    "title": "Sohbet",
+    "description": "Yerel bilgi tabanınıza dayalı sorular sorun.",
+    "emptyTitle": "Bir sohbet başlatın",
+    "emptyDescription": "Dizinleme etkinleştirildiğinde mesajlarınız cihazdaki RAG'i kullanır."
+  }
+}

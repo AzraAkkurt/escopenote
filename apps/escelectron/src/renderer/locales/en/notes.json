@@ -1,0 +1,209 @@
+{
+  "sidebarAria": "Notes sidebar",
+  "sidebarTitle": "All notes",
+  "newNote": "New note",
+  "standaloneNotes": "Standalone",
+  "noStandalone": "No standalone notes",
+  "noCourseNotes": "No notes in this course",
+  "tabsAria": "Open notes",
+  "closeTab": "Close {{title}}",
+  "untitled": "Untitled",
+  "selectNote": "Select a note or create a new one",
+  "editorPlaceholder": "Start writing… type / for commands",
+  "titleLabel": "Note title",
+  "loadError": "Could not load note",
+  "createError": "Could not create note",
+  "saveError": "Could not save note",
+  "deleteNote": "Delete note",
+  "deleteNoteAria": "Delete {{title}}",
+  "deleteConfirm": "Delete this note permanently? It will be removed from the library index.",
+  "deleteSuccess": "Note deleted",
+  "deleteError": "Could not delete note",
+  "toolbarAria": "Formatting toolbar",
+  "toolbar": {
+    "bold": "Bold",
+    "italic": "Italic",
+    "strike": "Strikethrough",
+    "underline": "Underline",
+    "highlight": "Highlight",
+    "code": "Inline code",
+    "h1": "Heading 1",
+    "h2": "Heading 2",
+    "h3": "Heading 3",
+    "bulletList": "Bullet list",
+    "orderedList": "Numbered list",
+    "taskList": "Task list",
+    "blockquote": "Quote",
+    "codeBlock": "Code block",
+    "alignLeft": "Align left",
+    "alignCenter": "Align center",
+    "alignRight": "Align right",
+    "table": "Insert table",
+    "divider": "Divider",
+    "mathInline": "Inline formula",
+    "wikilink": "Link note or resource",
+    "askAgent": "Ask agent",
+    "mermaid": "Mermaid diagram",
+    "link": "Link",
+    "linkPrompt": "Link URL"
+  },
+  "linkPicker": {
+    "title": "Insert link",
+    "searchPlaceholder": "Search notes or resources…",
+    "browseAll": "Browse all…",
+    "tabs": {
+      "all": "All",
+      "notes": "Notes",
+      "resources": "Resources"
+    },
+    "courseHint": "Items from this course are listed first; you can still pick from all.",
+    "empty": "No results",
+    "cancel": "Cancel"
+  },
+  "askAgent": {
+    "title": "Ask agent",
+    "intro": "Ask questions while you take notes. Copy the reply or insert it into the note.",
+    "placeholder": "Type your question… (Enter to send, Shift+Enter for newline)",
+    "send": "Send",
+    "stop": "Stop",
+    "close": "Close",
+    "emptyChat": "No messages yet. Ask your first question.",
+    "includeNote": "Include current note as context",
+    "preferWeb": "Allow web research",
+    "optionsAria": "Chat options",
+    "contextPreview": "Note preview: {{title}}",
+    "emptyNote": "(empty note)",
+    "copy": "Copy",
+    "insertIntoNote": "Insert into note",
+    "copied": "Copied to clipboard",
+    "copyFailed": "Could not copy",
+    "inserted": "Reply inserted into note",
+    "gatewayOffline": "AI gateway is offline. Check connection in settings.",
+    "you": "You",
+    "agent": "Agent",
+    "thinkingTitle": "Thinking",
+    "researchTitle": "{{count}} web searches",
+    "messagePreamble": "[Escopenote note editor — ephemeral question]",
+    "messageWebHint": "Web research is allowed; use public sources when local context is insufficient.",
+    "messageNoteTitle": "Note title",
+    "messageNoteBody": "Note body",
+    "messageQuestion": "Question"
+  },
+  "backlinks": {
+    "aria": "Backlinks",
+    "title": "Links to this note",
+    "loading": "Loading…",
+    "empty": "No other notes link here yet"
+  },
+  "slash": {
+    "groups": {
+      "basic": "Basic",
+      "inline": "Inline",
+      "lists": "Lists",
+      "blocks": "Blocks",
+      "advanced": "Advanced"
+    },
+    "text": {
+      "title": "Text",
+      "description": "Plain paragraph"
+    },
+    "h1": {
+      "title": "Heading 1",
+      "description": "Large section heading"
+    },
+    "h2": {
+      "title": "Heading 2",
+      "description": "Medium section heading"
+    },
+    "h3": {
+      "title": "Heading 3",
+      "description": "Small section heading"
+    },
+    "bold": {
+      "title": "Bold",
+      "description": "Make text bold"
+    },
+    "italic": {
+      "title": "Italic",
+      "description": "Make text italic"
+    },
+    "strike": {
+      "title": "Strikethrough",
+      "description": "Cross out text"
+    },
+    "underline": {
+      "title": "Underline",
+      "description": "Underline text"
+    },
+    "highlight": {
+      "title": "Highlight",
+      "description": "Highlight text"
+    },
+    "inlineCode": {
+      "title": "Code",
+      "description": "Inline code"
+    },
+    "bulletList": {
+      "title": "Bullet list",
+      "description": "Unordered list"
+    },
+    "orderedList": {
+      "title": "Numbered list",
+      "description": "Ordered list"
+    },
+    "taskList": {
+      "title": "Task list",
+      "description": "Checkbox to-do list"
+    },
+    "blockquote": {
+      "title": "Quote",
+      "description": "Block quote"
+    },
+    "codeBlock": {
+      "title": "Code block",
+      "description": "Multi-line code"
+    },
+    "table": {
+      "title": "Table",
+      "description": "Insert table with custom size (default 3×3)"
+    },
+    "divider": {
+      "title": "Divider",
+      "description": "Horizontal rule"
+    },
+    "mathInline": {
+      "title": "Formula (inline)",
+      "description": "LaTeX: $E=mc^2$"
+    },
+    "mathBlock": {
+      "title": "Formula (block)",
+      "description": "LaTeX block equation"
+    },
+    "mermaid": {
+      "title": "Flowchart",
+      "description": "Mermaid diagram (click to edit)"
+    },
+    "askAgent": {
+      "title": "Ask agent",
+      "description": "Ephemeral AI chat with note context"
+    },
+    "wikilink": {
+      "title": "Note / resource link",
+      "description": "Pick a note or course resource"
+    },
+    "link": {
+      "title": "Link",
+      "description": "External URL link"
+    }
+  },
+  "tableModal": {
+    "title": "Insert table",
+    "hint": "Default is 3×3; you can change rows and columns.",
+    "rows": "Rows",
+    "cols": "Columns",
+    "headerRow": "First row is header",
+    "previewAria": "Table preview",
+    "cancel": "Cancel",
+    "insert": "Insert"
+  }
+}

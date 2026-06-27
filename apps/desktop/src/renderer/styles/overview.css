@@ -1,0 +1,78 @@
+.page--overview {
+  max-width: 960px;
+}
+
+.overview-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+@media (max-width: 720px) {
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.overview-section__title {
+  font-size: var(--text-lg);
+  margin: 0 0 var(--space-4);
+}
+
+.overview-section__empty {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.overview-course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-3);
+}
+
+.overview-course-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.overview-course-card .ui-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.overview-course-card__icon {
+  font-size: 1.5rem;
+}
+
+.overview-course-card__meta {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.overview-note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overview-note-list li {
+  margin-bottom: var(--space-2);
+}
+
+.overview-note-list a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: var(--text-sm);
+}
+
+.overview-note-list a:hover {
+  text-decoration: underline;
+}

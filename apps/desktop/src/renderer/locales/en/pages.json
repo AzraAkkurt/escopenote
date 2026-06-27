@@ -1,0 +1,34 @@
+{
+  "overview": {
+    "title": "Overview",
+    "description": "Your courses, notes, and quick actions.",
+    "addCourse": "Add course",
+    "newNote": "New note",
+    "openChat": "Open chat",
+    "loading": "Loading…",
+    "emptyTitle": "Get started",
+    "emptyDescription": "Create a course or write your first note.",
+    "recentCourses": "Recent courses",
+    "recentNotes": "Recent notes",
+    "noCourses": "No courses yet",
+    "noNotes": "No notes yet",
+    "resourceCount": "{{count}} resource(s)"
+  },
+  "library": {
+    "title": "Library",
+    "description": "Courses with files, links, and notes for RAG.",
+    "emptyTitle": "Create your first course",
+    "emptyDescription": "Organize study materials by course.",
+    "notFound": "Course not found"
+  },
+  "notes": {
+    "title": "Notes",
+    "description": "Write and link notes grounded in your courses."
+  },
+  "chat": {
+    "title": "Chat",
+    "description": "Ask questions grounded in your local knowledge base.",
+    "emptyTitle": "Start a conversation",
+    "emptyDescription": "Your messages will use on-device RAG once indexing is enabled."
+  }
+}

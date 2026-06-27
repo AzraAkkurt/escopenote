@@ -1,0 +1,35 @@
+{
+  "name": "@escopenote/brain",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Escopenote Brain API — Gemini orchestration",
+  "type": "module",
+  "scripts": {
+    "predev": "npm run db:up",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "db:up": "docker compose -f ../../infra/compose/docker-compose.yml up -d --wait postgres",
+    "db:down": "docker compose -f ../../infra/compose/docker-compose.yml down"
+  },
+  "dependencies": {
+    "@escopenote/contracts": "file:../../packages/contracts",
+    "@google/generative-ai": "^0.24.0",
+    "@fastify/cors": "^11.0.1",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "fastify": "^5.3.3",
+    "jose": "^6.0.11",
+    "pg": "^8.16.0",
+    "zod": "^3.25.28"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.15.21",
+    "@types/pg": "^8.15.2",
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Escopenote'a hoş geldiniz",
+  "skip": "Kurulumu atla",
+  "skipStep": "Bu adımı atla",
+  "next": "Devam",
+  "privacy": {
+    "lead": "Çalışma verileriniz varsayılan olarak bu cihazda kalır.",
+    "local": "Belgeler ve arama dizinleri yerelde saklanır.",
+    "chunks": "Yapay zekaya yalnızca ilgili metin parçaları gönderilir — tam dosyalar değil.",
+    "keys": "API anahtarları bu uygulamada görünmez; sunucunuzda tutulur."
+  },
+  "profile": {
+    "body": "Her ders için dosya, bağlantı ve notları düzenlemek üzere dersler oluşturun.",
+    "cta": "Kütüphaneyi aç"
+  },
+  "library": {
+    "body": "Sohbet yanıtlarını yerel RAG ile desteklemek için derse PDF, bağlantı veya not ekleyin.",
+    "cta": "Kütüphaneyi aç"
+  },
+  "done": {
+    "body": "Hazırsınız. Bir derse materyal ekleyin, not yazın veya sohbette soru sorun.",
+    "cta": "İlk notunuzu yazın",
+    "notesCta": "Notlara göz at",
+    "later": "Kendim keşfedeceğim"
+  }
+}

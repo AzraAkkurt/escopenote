@@ -1,0 +1,40 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: escopenote
+      POSTGRES_PASSWORD: escopenote
+      POSTGRES_DB: escopenote_brain
+    ports:
+      - '5433:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U escopenote -d escopenote_brain']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  brain:
+    build:
+      context: ../..
+      dockerfile: apps/brain/Dockerfile
+    ports:
+      - '${PORT:-3001}:3000'
+    environment:
+      PORT: 3000
+      HOST: 0.0.0.0
+      DATABASE_URL: postgres://escopenote:escopenote@postgres:5432/escopenote_brain
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+      WELCOME_CREDITS: ${WELCOME_CREDITS:-100}
+      AUTH_REQUIRED: ${AUTH_REQUIRED:-true}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.5-flash}
+      CORS_ORIGINS: ${CORS_ORIGINS:-*}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

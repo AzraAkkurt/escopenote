@@ -1,0 +1,113 @@
+{
+  "name": "@escopenote/desktop",
+  "version": "1.0.1",
+  "private": true,
+  "description": "Escopenote desktop app (Electron)",
+  "main": "./out/main/index.js",
+  "author": "Escopenote",
+  "scripts": {
+    "dev": "npm run build:main && concurrently -k \"npm:dev:brain\" \"npm:dev:vite\" \"npm:dev:electron\"",
+    "dev:mock": "npm run build:main && concurrently -k \"npm:dev:gateway\" \"npm:dev:vite\" \"npm:dev:electron\"",
+    "dev:gateway": "node ../gateway/server.mjs",
+    "dev:brain": "npm run dev --prefix ../brain",
+    "dev:vite": "vite --config vite.renderer.config.ts",
+    "dev:electron": "wait-on tcp:5173 && cross-env NODE_ENV=development ELECTRON_DISABLE_SANDBOX=1 electron . --no-sandbox",
+    "dev:remote": "npm run build:main && concurrently -k \"npm:dev:vite\" \"npm:dev:electron\"",
+    "build": "npm run build:renderer && npm run build:main",
+    "build:main": "tsup --config tsup.config.ts",
+    "build:renderer": "vite build --config vite.renderer.config.ts",
+    "dist": "npm run build && electron-builder",
+    "dist:linux": "npm run build && electron-builder --linux",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:server": "cross-env VITE_GATEWAY_URL=http://31.57.46.24:3001 npm run build && electron-builder --linux",
+    "dist:server:win": "cross-env VITE_GATEWAY_URL=http://31.57.46.24:3001 npm run build && cross-env CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --win portable",
+    "dist:server:win:nsis": "cross-env VITE_GATEWAY_URL=http://31.57.46.24:3001 npm run build && cross-env CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --win nsis",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.renderer.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@tiptap/extension-bubble-menu": "^3.23.6",
+    "@tiptap/extension-highlight": "^3.23.6",
+    "@tiptap/extension-link": "^3.23.6",
+    "@tiptap/extension-mathematics": "^3.23.6",
+    "@tiptap/extension-placeholder": "^3.23.6",
+    "@tiptap/extension-table": "^3.23.6",
+    "@tiptap/extension-table-cell": "^3.23.6",
+    "@tiptap/extension-table-header": "^3.23.6",
+    "@tiptap/extension-table-row": "^3.23.6",
+    "@tiptap/extension-task-item": "^3.23.6",
+    "@tiptap/extension-task-list": "^3.23.6",
+    "@tiptap/extension-text-align": "^3.23.6",
+    "@tiptap/extension-underline": "^3.23.6",
+    "@tiptap/pm": "^3.23.6",
+    "@tiptap/react": "^3.23.6",
+    "@tiptap/starter-kit": "^3.23.6",
+    "@tiptap/suggestion": "^3.23.6",
+    "i18next": "^26.2.0",
+    "katex": "^0.17.0",
+    "mammoth": "^1.12.0",
+    "mermaid": "^11.15.0",
+    "pdf-parse": "^2.4.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-i18next": "^17.0.8",
+    "react-router-dom": "^7.15.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@types/node": "^22.15.29",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.0",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^36.3.2",
+    "electron-builder": "^26.0.12",
+    "eslint": "^9.28.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.33.1",
+    "vite": "^6.3.5",
+    "wait-on": "^8.0.3"
+  },
+  "build": {
+    "appId": "com.escopenote.desktop",
+    "productName": "Escopenote",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "out/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Education"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Escopenote-Setup-${version}.${ext}",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

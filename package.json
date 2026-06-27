@@ -1,0 +1,12 @@
+{
+  "name": "escopenote",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Escopenote monorepo",
+  "scripts": {
+    "dev": "npm run dev --prefix apps/desktop",
+    "build": "npm run build --prefix apps/desktop",
+    "typecheck": "npm run typecheck --prefix apps/desktop",
+    "lint": "npm run lint --prefix apps/desktop"
+  }
+}

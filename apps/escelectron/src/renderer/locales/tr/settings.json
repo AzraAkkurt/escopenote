@@ -1,0 +1,78 @@
+{
+  "title": "Ayarlar",
+  "description": "Görünüm, dil ve uygulama tercihleri.",
+  "tabs": {
+    "appearance": "Görünüm",
+    "usage": "Kullanım",
+    "rag": "RAG ve gizlilik",
+    "system": "Sistem"
+  },
+  "usage": {
+    "title": "Günlük kullanım",
+    "hint": "Günde en fazla 100 AI sohbet isteği gönderebilirsiniz. Limit gece yarısı (UTC) sıfırlanır.",
+    "today": "Bugün: {{used}} / {{limit}} istek",
+    "remaining": "Bugün kalan: {{count}}",
+    "refresh": "Yenile"
+  },
+  "rag": {
+    "title": "Yerel RAG",
+    "topK": "Getirme derinliği (top-K)",
+    "topKHint": "Her soruda kaç metin alıntısı getirileceği (1–20).",
+    "confirmWeb": "Web sonuçlarını kütüphaneye kaydetmeden önce onay iste",
+    "confirmWebHint": "Faz 9'da web yedeklemesi açıldığında yeni bilgileri yerel dizine eklemeden önce sor."
+  },
+  "gateway": {
+    "test": "Bağlantıyı test et",
+    "testing": "Test ediliyor…",
+    "testOk": "Ağ geçidine ulaşıldı ({{ms}} ms)",
+    "status": "Ağ geçidi",
+    "statusOnline": "Çevrimiçi — {{ms}} ms",
+    "statusOnlineProvider": "Çevrimiçi — {{ms}} ms ({{provider}})",
+    "providerGemini": "Gemini",
+    "providerMock": "mock",
+    "statusOffline": "Çevrimdışı",
+    "statusChecking": "Kontrol ediliyor…",
+    "server": "AI sunucusu"
+  },
+  "appearance": {
+    "title": "Görünüm",
+    "gateway": "Ağ geçidi URL",
+    "theme": "Tema",
+    "themeLight": "Açık",
+    "themeDark": "Koyu",
+    "themeSystem": "Sistem (OS)"
+  },
+  "language": {
+    "title": "Dil",
+    "display": "Arayüz dili",
+    "en": "İngilizce",
+    "tr": "Türkçe"
+  },
+  "about": {
+    "title": "Escopenote Hakkında",
+    "tagline": "Yerel bilgi ve gizlilik odaklı RAG ile yapay zeka destekli ders planlayıcı.",
+    "version": "Sürüm",
+    "electron": "Electron"
+  },
+  "data": {
+    "title": "Yerel veri",
+    "hint": "Ayarlar, planlar, panolar, sohbet ve kütüphane meta verisinin JSON yedeğini dışa/içe aktarın (ham PDF dosyaları dahil değil).",
+    "export": "Yedek dışa aktar…",
+    "import": "Yedek içe aktar…",
+    "exportDone": "Yedek kaydedildi: {{path}}",
+    "exportError": "Dışa aktarma başarısız",
+    "importDone": "Yedek içe aktarıldı. Yeniden yükleniyor…",
+    "importError": "İçe aktarma başarısız"
+  },
+  "system": {
+    "title": "Sistem",
+    "environment": "Ortam",
+    "gateway": "Ağ geçidi URL",
+    "os": "İşletim sistemi",
+    "ipc": "IPC",
+    "electron": "Electron",
+    "previewToast": "Örnek bildirim göster",
+    "userData": "Kullanıcı veri klasörü",
+    "fixtures": "Fixture"
+  }
+}

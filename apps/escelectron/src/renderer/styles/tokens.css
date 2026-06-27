@@ -1,0 +1,98 @@
+/**
+ * Design tokens — semantic variables. Themes override palette below.
+ */
+:root {
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', monospace;
+  --text-xs: 0.7rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --font-weight-medium: 550;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 650;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 8px 24px rgb(0 0 0 / 0.14);
+
+  /* Layout */
+  --title-bar-height: 40px;
+  --sidebar-width: 220px;
+
+  /* Motion */
+  --transition-fast: 150ms ease;
+}
+
+/* Dark theme (default) */
+:root,
+[data-theme='dark'] {
+  color-scheme: dark;
+  --color-bg: #0f1419;
+  --color-surface: #1a2332;
+  --color-surface-elevated: #243044;
+  --color-border: #2d3a4f;
+  --color-text: #e7ecf3;
+  --color-text-muted: #7d91a8;
+  --color-accent: #5b9fd4;
+  --color-accent-muted: #3d6f96;
+  --color-accent-subtle: rgb(91 159 212 / 0.15);
+  --color-success: #3d9a6a;
+  --color-warning: #c9a227;
+  --color-danger: #e06c6c;
+  --color-danger-strong: #c42b1c;
+  --color-focus-ring: rgb(91 159 212 / 0.45);
+}
+
+/* Light theme */
+[data-theme='light'] {
+  color-scheme: light;
+  --color-bg: #f4f6f9;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #eef2f7;
+  --color-border: #d4dce8;
+  --color-text: #1a2332;
+  --color-text-muted: #5a6b82;
+  --color-accent: #2a7ab8;
+  --color-accent-muted: #1e5f94;
+  --color-accent-subtle: rgb(42 122 184 / 0.12);
+  --color-success: #2d8a5c;
+  --color-warning: #9a7b18;
+  --color-danger: #c44e4e;
+  --color-danger-strong: #b91c1c;
+  --color-focus-ring: rgb(42 122 184 / 0.35);
+}
+
+/* Legacy aliases used in layout CSS */
+:root,
+[data-theme='dark'],
+[data-theme='light'] {
+  --bg: var(--color-bg);
+  --surface: var(--color-surface);
+  --surface-elevated: var(--color-surface-elevated);
+  --border: var(--color-border);
+  --text: var(--color-text);
+  --muted: var(--color-text-muted);
+  --accent: var(--color-accent);
+  --accent-dim: var(--color-accent-muted);
+  --ok: var(--color-success);
+  --error: var(--color-danger);
+  --radius: var(--radius-md);
+}

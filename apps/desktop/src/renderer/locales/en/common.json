@@ -1,0 +1,39 @@
+{
+  "appName": "Escopenote",
+  "loading": "Loading…",
+  "connected": "Connected",
+  "checking": "Checking…",
+  "notAvailable": "—",
+  "window": {
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "restore": "Restore",
+    "close": "Close"
+  },
+  "cancel": "Cancel",
+  "save": "Save",
+  "gateway": {
+    "offlineBanner": "AI gateway is offline. Chat and plan generation need the gateway; you can still browse your library locally.",
+    "errors": {
+      "GATEWAY_UNAVAILABLE": "Cannot reach the AI server. Check your internet connection.",
+      "GATEWAY_UNAUTHORIZED": "Client ID invalid. Restart the app or check the gateway URL.",
+      "GATEWAY_RATE_LIMIT": "Daily limit of 100 requests reached. Try again tomorrow.",
+      "GATEWAY_TIMEOUT": "Gateway timed out.",
+      "GATEWAY_ERROR": "Gateway error. Try again later."
+    }
+  },
+  "platform": {
+    "linux": "Linux",
+    "win32": "Windows",
+    "darwin": "macOS"
+  },
+  "toast": {
+    "themeUpdated": "Theme updated",
+    "languageUpdated": "Language updated",
+    "gatewayUpdated": "Gateway URL updated"
+  },
+  "errors": {
+    "ipc": "IPC error"
+  },
+  "fixturesMode": "Fixture mode (no disk writes)"
+}

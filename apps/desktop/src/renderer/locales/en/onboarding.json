@@ -1,0 +1,26 @@
+{
+  "title": "Welcome to Escopenote",
+  "skip": "Skip setup",
+  "skipStep": "Skip this step",
+  "next": "Continue",
+  "privacy": {
+    "lead": "Your study data stays on this device by default.",
+    "local": "Documents and search indexes are stored locally.",
+    "chunks": "Only relevant text excerpts are sent to the AI gateway — not full files.",
+    "keys": "API keys never appear in this app; they live on your server."
+  },
+  "profile": {
+    "body": "Create courses to organize files, links, and notes for each subject.",
+    "cta": "Open library"
+  },
+  "library": {
+    "body": "Add PDF, links, or notes per course to ground chat answers with local RAG.",
+    "cta": "Open library"
+  },
+  "done": {
+    "body": "You are ready. Add materials to a course, write notes, or ask questions in chat.",
+    "cta": "Write your first note",
+    "notesCta": "Browse notes",
+    "later": "Explore on my own"
+  }
+}

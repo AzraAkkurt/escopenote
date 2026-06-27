@@ -1,0 +1,39 @@
+{
+  "appName": "Escopenote",
+  "loading": "Yükleniyor…",
+  "connected": "Bağlı",
+  "checking": "Kontrol ediliyor…",
+  "notAvailable": "—",
+  "window": {
+    "minimize": "Küçült",
+    "maximize": "Büyüt",
+    "restore": "Geri al",
+    "close": "Kapat"
+  },
+  "cancel": "İptal",
+  "save": "Kaydet",
+  "gateway": {
+    "offlineBanner": "Yapay zeka ağ geçidi çevrimdışı. Sohbet ve plan oluşturma ağ geçidini gerektirir; kütüphaneyi yerel olarak kullanmaya devam edebilirsiniz.",
+    "errors": {
+      "GATEWAY_UNAVAILABLE": "Yapay zeka sunucusuna ulaşılamıyor. İnternet bağlantınızı kontrol edin.",
+      "GATEWAY_UNAUTHORIZED": "İstemci kimliği geçersiz. Uygulamayı yeniden başlatın veya ağ geçidi URL’sini kontrol edin.",
+      "GATEWAY_RATE_LIMIT": "Günlük 100 kullanım hakkınız doldu. Yarın tekrar deneyin.",
+      "GATEWAY_TIMEOUT": "Ağ geçidi zaman aşımına uğradı.",
+      "GATEWAY_ERROR": "Ağ geçidi hatası. Daha sonra tekrar deneyin."
+    }
+  },
+  "platform": {
+    "linux": "Linux",
+    "win32": "Windows",
+    "darwin": "macOS"
+  },
+  "toast": {
+    "themeUpdated": "Tema güncellendi",
+    "languageUpdated": "Dil güncellendi",
+    "gatewayUpdated": "Ağ geçidi URL güncellendi"
+  },
+  "errors": {
+    "ipc": "IPC hatası"
+  },
+  "fixturesMode": "Fixture modu (diske yazılmaz)"
+}

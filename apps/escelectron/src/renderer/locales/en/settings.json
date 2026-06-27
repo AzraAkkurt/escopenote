@@ -1,0 +1,78 @@
+{
+  "title": "Settings",
+  "description": "Appearance, language, and app preferences.",
+  "tabs": {
+    "appearance": "Appearance",
+    "usage": "Usage",
+    "rag": "RAG & privacy",
+    "system": "System"
+  },
+  "usage": {
+    "title": "Daily usage",
+    "hint": "You can send up to 100 AI chat requests per day. The limit resets at midnight UTC.",
+    "today": "Today: {{used}} / {{limit}} requests",
+    "remaining": "Remaining today: {{count}}",
+    "refresh": "Refresh"
+  },
+  "rag": {
+    "title": "Local RAG",
+    "topK": "Retrieval depth (top-K)",
+    "topKHint": "How many text excerpts to retrieve per question (1–20).",
+    "confirmWeb": "Confirm before saving web results to library",
+    "confirmWebHint": "When web fallback is enabled in Phase 9, ask before indexing new facts locally."
+  },
+  "gateway": {
+    "test": "Test connection",
+    "testing": "Testing…",
+    "testOk": "Gateway reachable ({{ms}} ms)",
+    "status": "Gateway",
+    "statusOnline": "Online — {{ms}} ms",
+    "statusOnlineProvider": "Online — {{ms}} ms ({{provider}})",
+    "providerGemini": "Gemini",
+    "providerMock": "mock",
+    "statusOffline": "Offline",
+    "statusChecking": "Checking…",
+    "server": "AI server"
+  },
+  "appearance": {
+    "title": "Appearance",
+    "gateway": "Gateway URL",
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System (OS)"
+  },
+  "language": {
+    "title": "Language",
+    "display": "Display language",
+    "en": "English",
+    "tr": "Turkish"
+  },
+  "about": {
+    "title": "About Escopenote",
+    "tagline": "AI study planner with local knowledge and privacy-first RAG.",
+    "version": "Version",
+    "electron": "Electron"
+  },
+  "data": {
+    "title": "Local data",
+    "hint": "Export or import JSON backups of settings, plans, boards, chat, and library metadata (not raw PDF binaries).",
+    "export": "Export backup…",
+    "import": "Import backup…",
+    "exportDone": "Backup saved to {{path}}",
+    "exportError": "Export failed",
+    "importDone": "Backup imported. Reloading…",
+    "importError": "Import failed"
+  },
+  "system": {
+    "title": "System",
+    "environment": "Environment",
+    "gateway": "Gateway URL",
+    "os": "OS",
+    "ipc": "IPC",
+    "electron": "Electron",
+    "previewToast": "Show sample toast",
+    "userData": "User data folder",
+    "fixtures": "Fixtures"
+  }
+}
